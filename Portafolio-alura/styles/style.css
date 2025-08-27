@@ -1,0 +1,175 @@
+:root{
+    --color-primario: #000; 
+    --color-secundario: #22D4FD;
+    --color-terciario: wheat;
+
+    --fuente-principal: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --fuente-secundaria: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* el :root es para automatizar ciertas cosas que veamos que se repiten 
+dentro del codigo */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('/img/pp.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+    box-sizing: border-box;
+}
+
+.destacado{
+    color: var(--color-secundario);
+    font-weight: bold;
+}
+
+.resaltar{
+    color: rgb(1, 11, 4);
+}
+
+.fondo-web{
+    margin: 0%,auto;
+}
+
+.tamanho-foto{
+    width: 50%;
+    height: auto;
+    border-radius: 15px;;
+}
+
+.contenedor-principal{
+    display: flex;
+    align-items: center;
+    padding: 10%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+@media (max-width: 1200px) {
+    .contenedor-principal {
+        flex-direction: column-reverse;
+        padding: 2%;
+        min-height: 80vh;
+    }
+    .header{
+        padding: 10%;
+    }
+    .header_menu_link{
+        justify-content: center;
+    }
+    .presentacion {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 5%;
+    }
+    .tamanho-foto {
+        width: 50%;
+        max-width: 300px;
+    }
+    
+}
+
+.presentacion{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.presentacion_titulo{
+    color:var(--color-secundario);
+    text-align: left;
+    font-family: var(--fuente-principal);
+    font-size: 33px;
+}
+
+.presentacion_texto{
+    color: rgb(205, 240, 10);
+    font-family: var(--fuente-principal);
+    text-align: justify;
+    font-size: 2.25rem;
+}
+
+.presentacion_links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.presentacion_links_redes{
+    width: 50%;
+    background-color: var(--color-secundario);
+    text-align: center;
+    padding: 18.5px 0;
+    border-radius: 8px;
+    font-family: var(--fuente-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid transparent;
+    justify-content: center;
+    gap: 10px;
+}
+
+.presentacion_subtitulo{
+    font-family: var(--fuente-secundaria);
+    font-size: 1.5rem;
+    color: var(--color-terciario);
+}
+
+.logo-redes{
+    width: 30px;
+    border-radius: 15px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.presentacion_links_redes:hover{
+    border-color: blue;
+}
+
+.footer{
+    background-color: var(--color-secundario);
+    padding: 1.5rem;
+    color: var(--color-primario);
+    position: relative;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.header_menu_link{
+    font-family: var(--fuente-principal);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:var(--color-secundario);
+    text-decoration: none;
+    border: 2px solid transparent;
+}
+
+.header{
+    background-color: rgb(56, 110, 229);
+    padding: 2% 0% 0% 8%;
+}
+
+.menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header_menu_link:hover{
+    color: lightseagreen;
+    text-decoration: underline;
+}
+/*con ctrl + d puedo seleccionar donde uso la variable y poder cambiarla una 
+vez y automaticamente se cambia en los demas lugares.  */
